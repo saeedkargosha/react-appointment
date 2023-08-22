@@ -12,9 +12,9 @@ body {
   font-family: 'Inter';
 }
 
-.react-calendar {
+/* .react-calendar {
   width: 400px;
-}
+} */
 
 .react-calendar__navigation button {
   font-size: 16px;

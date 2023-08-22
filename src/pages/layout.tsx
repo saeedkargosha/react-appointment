@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 
 export default function RootLayout() {
   return (
-    <div className='px-8 py-4 bg-slate-50 h-full'>
+    <div className='px-8 py-4 bg-slate-50 min-h-screen'>
       <header className=''>
         <nav></nav>
       </header>

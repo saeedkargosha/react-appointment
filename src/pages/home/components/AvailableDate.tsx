@@ -50,9 +50,12 @@ export function AvailableDate({ availableTimes }: { availableTimes: AvailableTim
 
   return (
     <div
-      className={clsx('grid grid-cols-1 md:grid-cols-[2fr_1px_2fr] gap-8 mt-20 bg-white rounded shadow-lg p-8', {
-        '!md:grid-cols-[2fr_1px_3fr]': selectedDateTimes.length > 0,
-      })}
+      className={clsx(
+        'grid grid-cols-1 md:grid-cols-[2fr_1px_2fr] gap-8 mt-20 bg-white rounded shadow-lg py-4 px-4 md:p-8',
+        {
+          '!md:grid-cols-[2fr_1px_3fr]': selectedDateTimes.length > 0,
+        },
+      )}
     >
       <Description />
       <div className='h-full w-[1px] bg-gray-200' />
@@ -65,6 +68,7 @@ export function AvailableDate({ availableTimes }: { availableTimes: AvailableTim
         >
           <Calendar
             minDate={new Date()}
+            className='md:w-[400px]'
             defaultView='month'
             nextAriaLabel='Go to next month'
             prevAriaLabel='Go to prev month'
