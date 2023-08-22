@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter';
+}
+
+.react-calendar {
+  width: 400px;
+}
+
+.react-calendar__navigation button {
+  font-size: 16px;
+}
+
+.react-calendar__navigation .react-calendar__navigation__prev-button {
+  font-size: 30px;
+  width: 44px;
+}
+
+.react-calendar__navigation .react-calendar__navigation__next-button {
+  font-size: 30px;
+  width: 44px;
+}
+
+.react-calendar,
+.react-calendar *,
+.react-calendar *:before,
+.react-calendar *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.react-calendar button {
+  margin: 0;
+  border: 0;
+  outline: none;
+}
+
+.react-calendar__month-view__days button:enabled {
+  @apply cursor-pointer rounded-full;
+  color: #0060e6;
+  font-weight: 700;
+}
+
+.react-calendar button:enabled:hover {
+  background-color: var(--primary-color-level3, rgba(0, 105, 255, 0.15));
+}
+
+.react-calendar__tile--range {
+  background-color: var(--primary-color, rgb(0, 105, 255));
+  color: white;
+}
+
+.react-calendar__navigation {
+  display: flex;
+}
+
+.react-calendar__navigation button {
+  background: none;
+}
+
+.react-calendar__navigation button:disabled {
+  @apply text-neutral-400;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+  background-color: var(--primary-color-level3, rgba(0, 105, 255, 0.15));
+  @apply rounded-full;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  padding: 0.5em;
+}
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  @apply text-red-600;
+}
+
+.react-calendar__tile {
+  max-width: 100%;
+  padding: 8px 0px;
+  background: none;
+  text-align: center;
+}
+
+.react-calendar__tile:disabled {
+  @apply text-neutral-400;
+}
+
+.react-calendar__tile--now {
+  @apply rounded-full underline text-blue-600 !important;
+}
+
+.react-calendar__tile--active {
+  background: #006edc;
+  color: white !important;
+}
+
+.react-calendar--selectRange .react-calendar__tile--hover {
+  background-color: #e6e6e6;
+}
+
+.react-calendar__navigation button.react-calendar__navigation__prev2-button {
+  display: none;
+}
+
+.react-calendar__navigation button.react-calendar__navigation__next2-button {
+  display: none;
+}
+
+.react-calendar__navigation .react-calendar__navigation__label {
+  pointer-events: none;
+  user-select: none;
+}
