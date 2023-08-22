@@ -8,10 +8,7 @@ export function Description() {
           'React lets you build user interfaces out of individual pieces called components. Create your own React components like Thumbnail, LikeButton, and Video. Then combine them into entire screens, pages, and apps.'
         }
       </p>
-      <a
-        href='https://react.dev/'
-        className='font-medium text-blue-600 dark:text-blue-500 hover:underline absolute bottom-0'
-      >
+      <a href='https://react.dev/' className='font-medium text-blue-600  hover:underline absolute bottom-0'>
         {'Read more'}
       </a>
     </div>
